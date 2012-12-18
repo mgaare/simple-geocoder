@@ -1,4 +1,17 @@
-simple-geocoder
-===============
+# simple-geocoder
 
-simple geocoder library for clojure
+A simple clojure library to do geocoding of addresses -> lat/long
+
+If you want more features, like geoip or reverse geocoding, then the
+more featureful https://github.com/r0man/geocoder-clj might be for
+you.
+
+## Usage
+
+
+
+## License
+
+Copyright © 2012 Michael Gaare
+
+Distributed under the Eclipse Public License, the same as Clojure.
