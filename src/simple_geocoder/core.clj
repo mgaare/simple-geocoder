@@ -3,7 +3,7 @@
             [simple-geocoder.mapquest :as mapquest]
             [simple-geocoder.yahoo :as yahoo]))
 
-(def geocoders
+(def geocode-fns
   {:ruby ruby/geocode
    :mapquest mapquest/geocode
    :yahoo yahoo/geocode})
@@ -13,7 +13,7 @@
   if it fails"
   (let [s (seq sources)]
     (when-let [source (first s)]
-      (let [result ((geocoders (source :type)) address source)]
+      (let [result ((geocoder-fns (source :type)) address source)]
         (if result
           result
           (geocode address (rest sources)))))))
