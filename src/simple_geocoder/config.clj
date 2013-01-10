@@ -1,18 +1,12 @@
 (ns simple-geocoder.config)
 
-(comment
-  ok, we want to somehow un-combine the config of geocoders with the order
-  in which they are tried... map - list - map? maybe should use an atom)
+(def initial-order [:ruby :mapquest :yahoo])
 
-(defn- initial-order "default order that geocoders are used" []
-  [:ruby :mapquest :yahoo])
-
-(defn- initial-sources "default config of geocoders" []
+(def initial-sources
   {:ruby  {:type :ruby
            :host "localhost"
            :port "5000"}
-   :mapquest {:type :mapquest
-              :api-key "fill-in"}
+   :mapquest-open {:type :mapquest-open}
    :yahoo {:type :yahoo
            :api-key "fill-in"}})
 

@@ -1,6 +1,6 @@
 (defproject simple-geocoder "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
-  :url "http://example.com/FIXME"
+  :description "basic geocoder, address -> lat/long"
+  :url "https://github.com/mgaare/simple-geocoder"
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.4.0"]
