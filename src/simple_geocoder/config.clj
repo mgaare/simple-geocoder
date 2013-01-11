@@ -1,14 +1,20 @@
 (ns simple-geocoder.config)
 
+<<<<<<< Updated upstream
 (def initial-order [:ruby :mapquest :yahoo])
+=======
+(comment
+  "The config has two parts - the config for the geocoding providers, and a
+vector for the order that they should be tried. The vector uses the keys
+of the providers as the references.")3
+>>>>>>> Stashed changes
 
 (def initial-sources
   {:ruby  {:type :ruby
            :host "localhost"
            :port "5000"}
    :mapquest-open {:type :mapquest-open}
-   :yahoo {:type :yahoo
-           :api-key "fill-in"}})
+   :yahoo-free {:type :yahoo-free}})
 
 (def config
   (atom  {:order initial-order

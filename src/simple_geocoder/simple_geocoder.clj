@@ -2,12 +2,12 @@
   (:use [simple-geocoder.config])
   (:require [simple-geocoder.ruby :as ruby]
             [simple-geocoder.mapquest-open :as mapquest-open]
-            [simple-geocoder.yahoo :as yahoo]))
+            [simple-geocoder.yahoo-free :as yahoo-free]))
 
 (def geocode-fns
   {:ruby ruby/geocode
    :mapquest mapquest-open/geocode
-   :yahoo yahoo/geocode})
+   :yahoo-free yahoo-free/geocode})
 
 (defn geocode [address sources]
   "Attempts to geocode an address, falling back to each of the sources in order
