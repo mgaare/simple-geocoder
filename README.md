@@ -8,7 +8,9 @@ you.
 
 ## Usage
 
-
+```leiningen
+[simple-geocoder "0.1.0-SNAPSHOT"]
+```
 
 ## License
 
